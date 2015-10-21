@@ -1,5 +1,69 @@
+/* Header */
+
+.section#header {
+  padding-top: 0px;
+  padding-bottom: 8px;
+
+  box-shadow: 0 0px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+.section#header > .container {
+  padding-top: 8px;
+}
+
+form#login .checkbox {
+  padding-top: 0;
+}
+
+/* Home */
+
+.section#filter {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+}
+
+.section#order {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul#order {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+ul#order li {
+  display: inline-block;
+  float: none;
+}
+
+ul#order li > a {
+  color: grey !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul#order li.active > a {
+  background-color: grey !important;
+  color: white !important;
+}
+
+.section#list {
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+.section#list > .container {
+  border-bottom: 0;  
+}
+
 .section#list .list-group-item {
   border: 0;
+}
+
+.form-horizontal .units {
+  padding-top: 7px;
 }
 
 .section#list .list-group-item .house-title {
@@ -27,56 +91,32 @@
   color: white;
 }
 
-#loading-next {
-  font-size: 24px;
-}
-
-ul#order {
-  text-align: center;
-}
-
-ul#order li {
-  display: inline-block;
-  float: none;
-}
-
-ul#order li > a {
-  color: grey !important;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-ul#order li.active > a {
-  background-color: grey !important;
-  color: white !important;
-}
-
 .vertical-center {
   display: flex;
   align-items: center;
 }
 
-#loading-next span.glyphicon {
-  animation:spin 1  s linear infinite;
+ul#houses {
+  margin-bottom: 0;
 }
+
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.section#header {
-  padding-top: 0px;
-  padding-bottom: 0;
+#loading-next {
+  font-size: 24px;
 }
 
-.section#header > .container {
-  padding-top: 8px;
-  background-color: #A4A4A4;
+#loading-next span.glyphicon {
+  animation:spin 1s ease infinite;
 }
 
-.section#list {
-  padding-bottom: 0;
+/* Contact */
+
+.section#contact {
+  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
 }
 
-.section#list > .container {
-  border: 1px solid #A4A4A4;
-  border-bottom: 0;  
+.section#office {
+  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
 }
