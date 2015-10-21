@@ -3,10 +3,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet"  type="text/css">
     </head><body>
         <div class="section" id="header">
             <div class="container">
@@ -71,8 +76,73 @@
         </div>
         <div class="section" id="filter">
             <div class="container">
-                <div class="row"></div>
                 <div class="row">
+                    <div class="col-md-3">
+                      <label for="exampleInputName1">Typ nehnuteľnosti</label>
+                      <div class="form-group">
+                        <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">Byt</label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2">Rodinny dom</label>
+                      </div>
+                     
+                     <label for="exampleInputName2">Lokalita</label>
+                     <div class="form-group">
+                         <input type="text" class="form-control" id="exampleInputName2" placeholder="Bratislava" data-cip-id="cIPJQ342845639">
+                     </div>
+                   </div>
+                       
+                   <div class="col-md-3">
+                     <label>Pocet izieb</label>
+                     <div class="form-group">
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox"> 1
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox"> 2
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox"> 3
+                         </label>
+                       </div>
+                       <div class="checkbox">
+                         <label>
+                           <input type="checkbox"> 4+
+                         </label>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   <div class="col-md-3">
+                      <label for="amount">Cenový rozsah</label>
+                      <input type="text" id="amount" readonly="" style="border:0; color:#337ab7; font-weight:bold;" data-cip-id="amount">
+                      <div class="form-inline">
+                        <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                          <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 10%; width: 40%;"></div>
+                        </div>
+                      </div>
+                   </div>
+                   
+                   <div class="col-md-3">
+                    <label>Rozloha</label>
+                        <div class="form-inline">
+                          <div class="form-group">
+                              <input type="text" class="form-control" id="exampleInputName2" placeholder="0" data-cip-id="cIPJQ342845640"> m&sup2;
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="200" data-cip-id="cIPJQ342845641"> m&sup2;
+                          </div>
+                        </div>
+                   </div>
+                    
+                    </div>
+                    
+                    <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <ul id="order" class="nav nav-pills">
                             <li class="active">
