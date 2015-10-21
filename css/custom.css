@@ -50,3 +50,14 @@ ul#order li.active > a {
   background-color: grey !important;
   color: white !important;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+#loading-next span.glyphicon {
+  animation:spin 1  s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
