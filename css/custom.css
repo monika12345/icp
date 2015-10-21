@@ -15,6 +15,11 @@ form#login .checkbox {
   padding-top: 0;
 }
 
+.logo-login {
+  padding-top: 8px;
+  padding-bottom: 24;
+}
+
 /* Home */
 
 .section#filter {
